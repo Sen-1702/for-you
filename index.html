@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For You 🤍</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(120deg, #ffdde1, #ee9ca7);
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      color: #333;
+    }
+    .box {
+      background: rgba(255,255,255,0.85);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      max-width: 500px;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: 1.2em;
+      line-height: 1.6;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 25px;
+      background: #ee9ca7;
+      color: white;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #ff6f91;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    <h1>Hey Paviii (ipdi koopdalam la?) 🤍</h1>
+    <p>
+      You came into my life quietly,<br>
+      and somehow made it warmer 🤍<br><br>
+      Your presence is enough for me!!!
+    </p>
+    <button onclick="playMusic()">Play Music 🎶</button>
+  </div>
+
+  <audio id="bgm" src="music.mp3"></audio>
+
+  <script>
+    function playMusic() {
+      document.getElementById("bgm").play();
+    }
+  </script>
+
+</body>
+</html>
